@@ -1,41 +1,58 @@
 {{template "base"}}
 {{define "content"}}
 <div class="container">
+    
+    <div>
+        <h2>
+            Jacob Stamper
+            <a target="_blank" href="https://github.com/StamperSoftware" title="github"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/jacob-stamper/" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </h2>
+        <h4>Full Stack Web Developer from Ohio, USA</h4>
         
-    <h2>
-        Jacob Stamper
-        <a target="_blank" href="https://github.com/StamperSoftware" title="github"><i class="fa-brands fa-github"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/jacob-stamper/" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-    </h2>
-    <h4>Full Stack Web Developer from Ohio, USA</h4>
+    </div>
     
-    <section>
-        Tech I use:
-        <div>React C# Go Angular TypeScript</div>
+    <section id="tech">
+        <h4>Tech</h4>
+        <div>
+            <p>React C# Go Angular TypeScript</p>
+            
+        </div>
     </section>
     
-    <section>
-        <h2 id="work">Work</h2>
-        <div>March 2024 - March 2019</div>
-        <div>hh2 Cloud Services</div>
-        <div>Worked as a full stack web developer for a construction management software company. The site gave users a way to </div>
+    <section id="work">
+        <h4>Work</h4>
+        <div>
+            <div>
+                <h5>Present - March 2024</h5>
+                <p>Freelance Web Developer</p>
+            </div>
+            <div>
+                <h5>March 2024 - March 2019</h5>
+                <p>hh2 Cloud Services - Full Stack Web Developer</p>
+            </div>
+        </div>
     </section>
     
-    <section>
-        <h2 id="education">Education</h2>
-        <div>Bachelors of Science in Computer Science from Weber State University</div>
-        <div>Associates Degree in Mathematics from Weber State University</div>
+    <section id="education">
+        <h4>Education</h4>
+        <div>
+            <p>Bachelors of Science in Computer Science from Weber State University</p>
+            <p>Associates Degree in Mathematics from Weber State University</p>
+        </div>
     </section>
     
-    <section>
-        <h2 id="projects"><a href="/projects">Projects</a></h2>
-    </section>
-    
-    <section>
-        <h2 id="contact">Contact</h2>
-        <p>(727)-967-2504</p>
-        <p>StamperSoftware@gmail.com</p>
+    <section id="contact">
+        <h4>Contact</h4>
+        <div>
+            <p>(727)-967-2504</p>
+            <p>StamperSoftware@gmail.com</p>
+        </div>
     </section>
     
 </div>
+{{end}}
+
+{{define "css"}} 
+    <link rel="stylesheet" href="../static/css/home.css">
 {{end}}
