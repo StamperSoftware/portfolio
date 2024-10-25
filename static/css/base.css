@@ -1,0 +1,51 @@
+html {
+    height : 100%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a, nav .nav-link{
+    color: #C2983D;
+}
+
+a:hover, nav .nav-link:hover{
+    color: #C2CCC5;
+}
+
+.nav-link:active {
+    color: #C2CCC5;
+}
+
+body {
+    height: 100%;
+    background: #252425;
+    color: #C2983D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#base-container {
+    height: -webkit-fill-available;
+}
+
+i {
+    color : #C2CCC5;
+}
+
+footer {
+    color: #C2983D;
+    padding-bottom: 1em;
+}
+
+/*
+colors :
+charcoal -> #252425 background
+forest -> #303D38
+mustard -> #C2983D text
+putty -> #C2CCC5 secondary text
+mushroom -> #928A74
+*/
