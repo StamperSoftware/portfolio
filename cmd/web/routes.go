@@ -17,6 +17,12 @@ func (app *application) routes() http.Handler {
 	fileServer := http.FileServer(http.Dir("./static/"))
 	mux.Handle("/static/*", http.StripPrefix("/static", fileServer))
 
+	bootstrapFileServer := http.FileServer(http.Dir("./node_modules/bootstrap/"))
+	mux.Handle("/node_modules/bootstrap/*", http.StripPrefix("/node_modules/bootstrap", bootstrapFileServer))
+
+	popperFileServer := http.FileServer(http.Dir("./node_modules/@popperjs/"))
+	mux.Handle("/node_modules/@popperjs/*", http.StripPrefix("/node_modules/@popperjs", popperFileServer))
+
 	mux.Get("/", app.Home)
 	mux.Get("/{page}", app.Page)
 	return mux

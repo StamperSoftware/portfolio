@@ -24,7 +24,7 @@ func (app *application) render(w http.ResponseWriter, t string, td *templateData
 		td = &templateData{}
 	}
 
-	if err := tmpl.ExecuteTemplate(w, t, td); err != nil {
+	if err = tmpl.ExecuteTemplate(w, t, td); err != nil {
 		log.Println(err)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
