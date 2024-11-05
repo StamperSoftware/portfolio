@@ -73,12 +73,17 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-
-#base-container {
-    height: -webkit-fill-available;
-    display: grid;
-    grid-template-columns: 400px auto 400px;
-}
+    #base-container {
+        height: -webkit-fill-available;
+        @media (width >= 1200px) {
+            display: grid;
+            grid-template-columns: 400px auto 400px;
+        }
+        @media (width < 1200px) {
+            display: grid;
+            grid-template-columns: 0 auto 0;
+        }
+    }
 
 footer {
     padding-bottom: 1em;
