@@ -12,12 +12,33 @@
         {{template "navbar" .}}
         
         <div id="base-container">
-            {{block "content" .}}
-            {{end}}
+            <div id="left-side-bar" style="background-image: url('/static/images/banner.png')"></div>
+            <div>
+                {{block "content" .}}
+                {{end}}
+            </div>
+            <div id="right-side-bar" style="background-image: url('/static/images/banner2.png')"></div>
         </div>
         
         {{template "footer" .}}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            let count = 0;
+            setInterval(()=> {
+                let image1 = '';
+                let image2 = '';
+                if (count % 2 === 1) {
+                    image1 = `url('/static/images/banner2.png')`
+                    image2 = `url('/static/images/banner.png')`
+                } else {
+                    image1 = `url('/static/images/banner.png')`
+                    image2 = `url('/static/images/banner2.png')`
+                }
+                count++;
+                document.getElementById("left-side-bar").style.backgroundImage = image1;
+                document.getElementById("right-side-bar").style.backgroundImage = image2;
+            }, 1200)
+        </script>
         {{block "js" .}}
         {{end}}
     </body>

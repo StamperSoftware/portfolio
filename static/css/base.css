@@ -76,6 +76,8 @@ body {
 
 #base-container {
     height: -webkit-fill-available;
+    display: grid;
+    grid-template-columns: 400px auto 400px;
 }
 
 footer {
