@@ -1,3 +1,25 @@
-section > div {
+section:not(#portfolio-header) > div{
     margin-left: 3em;
+}
+
+#cover-photo {
+    border-radius : 50%;
+    width: 166px;
+}
+
+.icon-container {
+    display: flex;
+    gap:5px;
+    align-items: center;
+    font-size:1.2rem;
+}
+
+.icon-container > i {
+    font-size:1rem;
+}
+
+#portfolio-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom:2rem;
 }
