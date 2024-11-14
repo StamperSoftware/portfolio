@@ -23,3 +23,11 @@ section:not(#portfolio-header) > div{
     gap: 2rem;
     margin-bottom:2rem;
 }
+
+a#weber-state {
+    color:unset;
+}
+
+a#weber-state:hover{
+    color:#492365;
+}
