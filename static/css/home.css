@@ -5,6 +5,9 @@ section:not(#portfolio-header) > div{
 #cover-photo {
     border-radius : 50%;
     width: 166px;
+    @media (width < 992px) {
+        display: none;
+    }
 }
 
 .icon-container {

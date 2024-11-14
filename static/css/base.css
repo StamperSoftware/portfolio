@@ -53,7 +53,14 @@
 
 .navbar {
     --bs-navbar-color :var(--primary-color);
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28194, 152, 61, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-icon-bg: url("/static/images/cover-photo.jpg");
+}
+
+.navbar #cover-photo-dropdown {
+    width: 5em; 
+    border:none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .dropdown-menu {
