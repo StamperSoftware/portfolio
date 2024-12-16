@@ -53,7 +53,7 @@
 
 .navbar {
     --bs-navbar-color :var(--primary-color);
-    --bs-navbar-toggler-icon-bg: url("/static/images/cover-photo.jpg");
+    --bs-navbar-toggler-icon-bg: url("/static/images/headshot.svg");
 }
 
 .navbar #cover-photo-dropdown {
@@ -81,18 +81,32 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-    #base-container {
-        height: -webkit-fill-available;
-        @media (width >= 1200px) {
-            display: grid;
-            grid-template-columns: 400px auto 400px;
-        }
-        @media (width < 1200px) {
-            display: grid;
-            grid-template-columns: 0 auto 0;
-        }
+
+#base-container {
+    height: -webkit-fill-available;
+    @media (width >= 1200px) {
+        display: grid;
+        grid-template-columns: 400px auto 400px;
     }
+    @media (width < 1200px) {
+        display: grid;
+        grid-template-columns: 0 auto 0;
+    }
+}
 
 footer {
     padding-bottom: 1em;
+}
+
+
+.navbar .nav-brand {
+    @media(width < 992px) {
+        display: none;
+    }
+}
+
+.navbar #home-link {
+    @media(width >= 992px) {
+        display: none;
+    }
 }
