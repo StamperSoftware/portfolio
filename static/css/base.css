@@ -2,7 +2,7 @@
     
     --primary-color:#C2983D; /*mustard*/
     --primary-color-rgb:194,152,61; /*mustard*/
-    
+    --faded-primary-rgb:194,152,61,.5;
     --secondary-color:#C2CCC5; /*putty*/
     --secondary-color-rgb:194,204,197; /*putty*/
     
@@ -51,22 +51,6 @@
     --bs-tertiary-bg:var(--secondary-background);
 }
 
-.navbar {
-    --bs-navbar-color :var(--primary-color);
-    --bs-navbar-toggler-icon-bg: url("/static/images/headshot.svg");
-}
-
-.navbar #cover-photo-dropdown {
-    width: 5em; 
-    border:none;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.dropdown-menu {
-    --bs-dropdown-link-active-bg:var(--active);
-}
-
 html {
     height : 100%;
 }
@@ -91,22 +75,5 @@ body {
     @media (width < 1200px) {
         display: grid;
         grid-template-columns: 0 auto 0;
-    }
-}
-
-footer {
-    padding-bottom: 1em;
-}
-
-
-.navbar .nav-brand {
-    @media(width < 992px) {
-        display: none;
-    }
-}
-
-.navbar #home-link {
-    @media(width >= 992px) {
-        display: none;
     }
 }

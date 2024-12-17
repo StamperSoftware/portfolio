@@ -1,9 +1,9 @@
 footer {
-    display: grid; 
+    display: grid;
+    border-top: solid 1px rgba(var(--faded-primary-rgb));
     grid-template-columns: 10% auto 10%;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
 }
 
 #social-links-container {

@@ -1,0 +1,30 @@
+.navbar {
+    --bs-navbar-color :var(--primary-color);
+    --bs-navbar-toggler-icon-bg: url("/static/images/headshot.svg");
+}
+
+.navbar #cover-photo-dropdown {
+    width: 5em;
+    border:none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg:var(--active);
+}
+
+.navbar .nav-brand {
+    @media(width < 992px) {
+        display: none;
+    }
+}
+.navbar .nav-brand img {
+    height:50px;
+}
+
+.navbar #home-link {
+    @media(width >= 992px) {
+        display: none;
+    }
+}
